@@ -1,0 +1,47 @@
+print("Seja bem-vindo a calculadora!") # Introdução
+print("== OPERAÇÕES ==\n+ = Mais\n- = menos\n* = vezes\n/ = divisão\n** = potência\nRQ = Raiz Quadrada\n <------> \n")
+
+Operation = str(input("Digite uma operação matemática:\n"))
+
+if Operation == "+":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 + N2)
+elif Operation == "-":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 - N2)
+elif Operation == "*":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 * N2)
+elif Operation == "/":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 / N2)
+elif Operation == "%+":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 + ((N2 / 100) * N1))
+elif Operation == "%-":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 - ((N2 / 100) * N1))
+elif Operation == "**":
+    N1 = float(input("1° Valor:\n"))
+    N2 = float(input("2° Valor:\n"))
+    # Resultado
+    print(N1 ** N2)
+elif Operation == "RQ":
+    N1 = float(input("1° Valor:\n"))
+    print(N1 ** 0.5)
+else:
+    print("Ops! Algo deu erro, verifique se você digitou alguma coisa errada!") # Caso dê algum erro...
+# Fechar programa
+input("Clique na tecla 'Enter' para finalizar o programa")
